@@ -1,0 +1,19 @@
+@media screen and (min-width: $medium) {
+  #secondaryMenu {
+    text-align: right;
+  }
+  #primaryMenu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    li {
+
+    }
+    li a {
+      border: none;
+    }
+    .sub-menu {
+      display: none;
+    }
+  }
+}

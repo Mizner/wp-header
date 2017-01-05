@@ -1,0 +1,67 @@
+#theHeader {
+  width: 100%;
+  background: $darkGray;
+}
+
+#theTopBar {
+  background: $dark;
+  ul {
+    max-width: 1200px;
+    margin: auto;
+  }
+  a {
+    color: white;
+  }
+}
+
+#theHeaderContainer {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  > * {
+    flex: 1;
+  }
+}
+
+
+
+#theHeaderPrimary {
+  padding: .5em 0;
+  flex: 1 100%;
+  @media screen and (min-width: $medium) {
+    max-width: 35%;
+  }
+  #theLogo {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg {
+      flex: 1;
+      filter: drop-shadow(6px 2px 5px #000);
+    }
+  }
+}
+
+#theHeaderSecondary {
+  flex: 3;
+  a {
+    color: white;
+    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+}
+
+// ------------------------
+// Logged In Fix
+// ------------------------
+
+.admin-bar #theHeader {
+  top: 32px;
+  @media screen and (max-width: 782px) {
+    top: 46px;
+  }
+}

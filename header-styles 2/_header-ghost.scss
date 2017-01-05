@@ -1,0 +1,11 @@
+.home div#page-container {
+  margin-top: 0 !important;
+}
+
+
+.home #theHeader {
+  background: transparent;
+}
+.home .fixedHeader  #theHeader {
+  background: linear-gradient(180deg, rgba(237,237,237,1) 0%, rgba(246,246,246,1) 53%, rgba(255,255,255,.5) 100%);
+}

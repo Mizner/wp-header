@@ -1,0 +1,54 @@
+$fixedTransition: 400ms ease all;
+
+div#page-container {
+  margin-top: 0 !important;
+  @media screen and (min-width: $medium) {
+    margin-top: 120px !important;
+  }
+}
+
+#theHeader,
+#theHeaderPrimary,
+#primaryMenu li a,
+#secondaryMenu,
+#secondaryMenu li,
+#secondaryMenu li a {
+  transition: $fixedTransition;
+}
+
+#theHeader {
+  @media screen and (min-width: $medium) {
+    position: fixed;
+    z-index: $headerNavZindex;
+    top: 0;
+    left: 0;
+  }
+}
+
+.fixedHeader {
+  #theHeader {
+    background: white;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  #secondaryMenu {
+    padding: .2em;
+    li {
+      line-height: .5em;
+    }
+    li a {
+      font-size: .8em;
+    }
+  }
+  #theHeaderPrimary {
+    max-width: 25%;
+  }
+  #primaryMenu {
+    li a {
+      color: $darkGray;
+      font-size: 1em;
+    }
+  }
+  path.item0 {
+    fill: $darkGray;
+  }
+}
