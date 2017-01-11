@@ -1,6 +1,6 @@
 #theHeader {
   width: 100%;
-  background: $darkGray;
+  background: $dark-gray;
 }
 
 #theTopBar {
@@ -15,18 +15,15 @@
 }
 
 #theHeaderContainer {
-  max-width: 1200px;
-  margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  text-align: right;
   > * {
     flex: 1;
   }
 }
-
-
 
 #theHeaderPrimary {
   padding: .5em 0;
@@ -34,15 +31,19 @@
   @media screen and (min-width: $medium) {
     max-width: 35%;
   }
-  #theLogo {
+  #logo {
     max-width: 90%;
     margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     svg {
+      max-width: 100%;
       flex: 1;
       filter: drop-shadow(6px 2px 5px #000);
+    }
+    img {
+      max-width: 100%;
     }
   }
 }

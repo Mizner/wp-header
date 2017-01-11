@@ -4,7 +4,7 @@
     padding-right: 30px;
   }
 }
-#topMenuNav > div > ul {
+#topMenuNav > ul {
   // Buttons
   button {
     opacity: .5;
@@ -33,6 +33,7 @@
   }
   // Top Level Menu Items
   > li {
+    position: relative;
     display: inline-block;
   }
   // Sub Menu

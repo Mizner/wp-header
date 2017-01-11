@@ -1,0 +1,18 @@
+// Project or Client Specific Rules here
+#theHeader {
+  background: white;
+  #logo svg {
+    filter: none;
+  }
+}
+
+#theHeaderContainer {
+  padding: 0;
+}
+#menuButton,
+#theHeaderSecondary a {
+  font-family: $font-primary;
+  color: $brandBlue;
+  text-shadow: none;
+}
+

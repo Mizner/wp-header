@@ -12,8 +12,17 @@
     li a {
       border: none;
     }
-    .sub-menu {
-      display: none;
+    > li > .sub-menu {
+      text-align: left;
+      background: $dark;
+      white-space: nowrap;
+      li {
+        padding-left: 0;
+      }
+      li a {
+        padding-left: .5em;
+        padding-right: .5em;
+      }
     }
   }
 }

@@ -1,0 +1,20 @@
+#primaryMenu {
+  > li.menu-item-has-children {
+    position: relative;
+    > ul.sub-menu {
+      position: absolute;
+      z-index: 999;
+      margin-top: 2em;
+      visibility: hidden;
+      transition: 0.2s .7s; /* delay of 1 seconds on hover off */
+      opacity: 0;
+    }
+    &:focus, &:hover {
+      > ul.sub-menu {
+        opacity: 1;
+        visibility: visible;
+        transition-delay: 0s; /* react immediately on hover */
+      }
+    }
+  }
+}
